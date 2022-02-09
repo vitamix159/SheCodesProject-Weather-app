@@ -54,21 +54,27 @@ function searchButton(event) {
 function showTemp(response) {
   let tempDisplay = document.querySelector("#temperature");
   let tempData = Math.round(response.data.main.temp);
-  tempDisplay.innerHTML = `${tempData}°C`;
   let cityDisplay = document.querySelector(`#city`);
   let cityData = response.data.name;
   let countryData = response.data.sys.country;
-  cityDisplay.innerHTML = `${cityData}, ${countryData}`;
   let cloudDisplay = document.querySelector(`#clouds`);
   let clouds = response.data.weather[0].description;
+  let humidityDisplay = document.querySelector(`#humidity`);
+  let windDisplay = document.querySelector(`#windSpeed`);
+  let iconDisplay = document.querySelector("#weather-icon");
+  
+  
+  
+  tempDisplay.innerHTML = `${tempData}°C`;
+  cityDisplay.innerHTML = `${cityData}, ${countryData}`;
   clouds = clouds.charAt(0).toUpperCase() + clouds.slice(1);
   cloudDisplay.innerHTML = `Clouds: ${clouds} ☁`;
-  let humidityDisplay = document.querySelector(`#humidity`);
   humidityDisplay.innerHTML = `Humidity: ${response.data.main.humidity}% 💧`;
-  let windDisplay = document.querySelector(`#windSpeed`);
   windDisplay.innerHTML = `Wind speed: ${Math.round(
-    response.data.wind.speed
+  response.data.wind.speed
   )} m/s 🌬`;
+  iconDisplay.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+  iconDisplay.setAttribute("alt", response.data.weather[0].description);
 }
 
 let form = document.querySelector("form");
