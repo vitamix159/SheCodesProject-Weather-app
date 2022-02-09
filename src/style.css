@@ -1,5 +1,5 @@
 body {
-    max-width: 50%;
+    max-width: 750px;
     margin: 0 auto;
     background: radial-gradient(
       circle farthest-corner at 12.3% 19.3%,
@@ -10,15 +10,12 @@ body {
   input {
     width: 55%;
   }
-  span {
-    font-size: 20px;
-  }
   h1,
   h2 {
     font-size: 28px;
     line-height: 1.2rem;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   }
   header {
     margin-bottom: 20px;
@@ -30,9 +27,11 @@ body {
     font-style: italic;
     line-height: 14px;
     font-size: 12px;
-    margin: 15px;
   }
   
+  .weather-specs span {
+    font-size: 18px;
+  }
   .container {
     background-color: rgb(118, 161, 252, 0.7);
     border-radius: 10px;
@@ -43,33 +42,35 @@ body {
   
   .temperature {
     font-size: 3rem;
-    line-height: 30px;
+    line-height: 1;
   }
   
   .units {
     font-size: 14px;
+    font-weight: 200;
     position: relative;
     top: -22px;
-    left: -5px;
+    left: -8px;
   }
   
   .col-6 {
-    margin-top: 60px;
+    margin-top: 40px;
     font-family: "PT Mono", monospace;
     text-align: center;
   }
   .current-temp {
     font-family: "PT Mono", monospace;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 2em;
   }
   .col {
     font-family: "PT Mono", monospace;
     text-align: center;
+    
   }
   .current-location-button {
     position: relative;
-    top: 20px;
+    top: 18px;
     left: -46px;
   }
   
