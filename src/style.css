@@ -13,11 +13,13 @@ body {
     height: 2rem;
     font-size: 14px;
     margin-top: 40px;
+    
   }
-
-  
+  hr {
+    margin: 0;
+    padding: 0;
+  }
   small {
-    line-height: 14px;
     font-size: 12px;
   }
 
@@ -36,18 +38,21 @@ body {
     font-size: 18px;
     font-weight: 400px;
   }
-  .weather-specs span {
+  .weather-specs {
     font-size: 18px;
     text-align: left;
+    margin-top: 30px;
   }
   .container {
     background-color: #cffdf8;
     border-radius: 10px;
     box-shadow: 6px -6px 14px rgb(0, 0, 0, 0.2);
     margin-top: 50px;
+    text-align: center;
   }
   .location {
     text-align: right;
+    margin-top: 2rem;
   }
   .temperature {
     font-size: 3rem;
@@ -59,19 +64,15 @@ body {
     top: -22px;
     left: -8px;
   }
-  .search-input {
-    margin-top: 40px;
-    text-align: center;
-  }
   .current-weather {
     margin-top: 40px;
     text-align: center;
   }
-  .current-temp {
-    text-align: center;
-    margin-top: 2em;
-  }
+  
   .col {
     text-align: center;
+  }
+  .source {
+    text-align: left;
   }
  
