@@ -18,8 +18,8 @@
     <div class="container">
         <form id="searching-form">
             <div class="row">
-                <div class="col-6">
-            <input type="text" placeholder="Search city..." autocomplete="off" autofocus="on" id="input-value">
+                <div class="col-6 search-input">
+            <input type="text" placeholder="Search city.." autocomplete="off" class="border-0"class="border-0" autofocus="on" id="input-value">
             <button type="submit" class="btn btn-warning">Search</button>
             <div class="current-location-button">
                 <button type="submit" class="btn btn-warning" id="current-location">Current location</button>
@@ -35,28 +35,25 @@
                 </div>
             </div> 
         </form>
-    <header>
+    <div class="heading">
         <div class="row current-temp">
             <div class="col-4 location">
-                <h1>
-                <header id="city"><br /> <br /></header>
+                <div id="city">Telšiai, LT <br /> <br /></div>
                 <span class="temperature" id="temperature">
+                    2
                 </span>
-                <span class="units">°C | °F</Span>
-                </h1>
+                <span class="units">°C | °F</span>
             </div>
             <div class="col-4 cloudy-image">
-                <img src="" alt="" width="150" id="weather-icon">
+                <img src="images/04d@2x.png" alt="" width="150" id="weather-icon">
             </div>
             <div class="col-4 weather-specs">
-                <h1>
-                <span id="clouds">Clouds: Cloudy ☁</span> <br />
-                <span id="humidity">Humidity: 91% 💧</span> <br />
-                <span id="windSpeed">Wind speed: 3 m/s 🌬</span> <br />
-                <span id="precipitation">Precipitation: 3% 🌧</span> <br />
-                </h1>
+                <span id="clouds">Clouds: Cloudy</span> <br />
+                <span id="humidity">Humidity: 91%</span> <br />
+                <span id="windSpeed">Wind speed: 3 m/s</span> <br />
+                <span id="precipitation">Precipitation: 3%</span> <br />
             </div>
-    </header>
+        </div>
     <small>
         5 day weather forecast
         <hr>

@@ -65,14 +65,14 @@ function showTemp(response) {
   
   
   
-  tempDisplay.innerHTML = `${tempData}°C`;
+  tempDisplay.innerHTML = `${tempData}`;
   cityDisplay.innerHTML = `${cityData}, ${countryData}`;
   clouds = clouds.charAt(0).toUpperCase() + clouds.slice(1);
-  cloudDisplay.innerHTML = `Clouds: ${clouds} ☁`;
-  humidityDisplay.innerHTML = `Humidity: ${response.data.main.humidity}% 💧`;
+  cloudDisplay.innerHTML = `Clouds: ${clouds}`;
+  humidityDisplay.innerHTML = `Humidity: ${response.data.main.humidity}%`;
   windDisplay.innerHTML = `Wind speed: ${Math.round(
   response.data.wind.speed
-  )} m/s 🌬`;
+  )} m/s`;
   iconDisplay.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   iconDisplay.setAttribute("alt", response.data.weather[0].description);
 }

@@ -1,50 +1,56 @@
 body {
     max-width: 750px;
     margin: 0 auto;
-    background: radial-gradient(
-      circle farthest-corner at 12.3% 19.3%,
-      rgba(85, 88, 218, 1) 0%,
-      rgba(95, 209, 249, 1) 100.2%
-    );
+    font-family: "PT Mono", monospace;
+    background: #9aebdd;
+    font-style: italic;
+
   }
   input {
-    width: 55%;
+    width: 220px;
+    border-radius: 15px;
+    outline: none;
+    height: 2rem;
+    font-size: 14px;
   }
-  h1,
-  h2 {
-    font-size: 28px;
-    line-height: 1.2rem;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  }
-  header {
-    margin-bottom: 20px;
-    font-size: 18px;
-  }
+
   
   small {
-    font-family: "PT Mono", monospace;
-    font-style: italic;
     line-height: 14px;
     font-size: 12px;
   }
-  
+
+  .current-location-button {
+    position: relative;
+    top: 18px;
+    left: -46px;
+  }
+  .btn-warning {
+    font-size: 14px;
+    height: 2rem;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px rgb(0, 0, 0, 0.2);
+  }
+  .heading {
+    font-size: 18px;
+    font-weight: 400px;
+  }
   .weather-specs span {
     font-size: 18px;
+    text-align: left;
   }
   .container {
-    background-color: rgb(118, 161, 252, 0.7);
+    background-color: #cffdf8;
     border-radius: 10px;
-    box-shadow: 6px -6px 14px rgba(147, 289, 317);
+    box-shadow: 6px -6px 14px rgb(0, 0, 0, 0.2);
     margin-top: 50px;
-   
   }
-  
+  .location {
+    text-align: right;
+  }
   .temperature {
     font-size: 3rem;
-    line-height: 1;
   }
-  
   .units {
     font-size: 14px;
     font-weight: 200;
@@ -52,25 +58,19 @@ body {
     top: -22px;
     left: -8px;
   }
-  
-  .col-6 {
+  .search-input {
     margin-top: 40px;
-    font-family: "PT Mono", monospace;
+    text-align: center;
+  }
+  .current-weather {
+    margin-top: 40px;
     text-align: center;
   }
   .current-temp {
-    font-family: "PT Mono", monospace;
     text-align: center;
     margin-top: 2em;
   }
   .col {
-    font-family: "PT Mono", monospace;
     text-align: center;
-    
   }
-  .current-location-button {
-    position: relative;
-    top: 18px;
-    left: -46px;
-  }
-  
+ 
