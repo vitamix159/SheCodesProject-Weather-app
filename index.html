@@ -19,7 +19,7 @@
         <form id="searching-form">
             <div class="row">
                 <div class="col-6 search-input">
-            <input type="text" placeholder="Search city.." autocomplete="off" class="border-0"class="border-0" autofocus="on" id="input-value">
+            <input type="text" placeholder="Search city.." autocomplete="off" autofocus="on" id="input-value">
             <button type="submit" class="btn btn-warning">Search</button>
             <div class="current-location-button">
                 <button type="submit" class="btn btn-warning" id="current-location">Current location</button>
@@ -38,10 +38,8 @@
     <div class="heading">
         <div class="row current-temp">
             <div class="col-4 location">
-                <div id="city">Telšiai, LT <br /> <br /></div>
-                <span class="temperature" id="temperature">
-                    2
-                </span>
+                <div id="city">Telšiai, LT</div>
+                <span class="temperature" id="temperature">2</span>
                 <span class="units">°C | °F</span>
             </div>
             <div class="col-4 cloudy-image">
@@ -89,7 +87,7 @@
     </p>
     <br />
 </div>
-<small>
+<small class="source">
     <a href="https://github.com/vitamix159/SheCodesProject-Weather-app" class="open-source-code" target="_blank">Open-source code</a> by Vitalija Ramonaitė
 </small>
 <script src="src/index.js"></script>
