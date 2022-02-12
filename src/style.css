@@ -60,10 +60,17 @@ body {
   }
   .units {
     font-size: 14px;
+    font-style: normal;
     font-weight: 200;
     position: relative;
-    top: -22px;
+    top: -24px;
     left: -8px;
+    text-decoration: none;
+  }
+  .heading .active {
+    color: #000;
+    cursor: default;
+    text-decoration: none
   }
   .current-weather {
     margin-top: 40px;
@@ -77,4 +84,6 @@ body {
   .source {
     text-align: left;
   }
- 
+  .heading .active:hover {
+    text-decoration: none;
+  }

@@ -63,7 +63,7 @@ function showTemp(response) {
   let windDisplay = document.querySelector(`#windSpeed`);
   let iconDisplay = document.querySelector("#weather-icon");
   
-  
+  celsiusTemperature = response.data.main.temp;
   
   tempDisplay.innerHTML = `${tempData}`;
   cityDisplay.innerHTML = `${cityData}, ${countryData}`;
@@ -92,5 +92,28 @@ function getWeather(position) {
   axios.get(apiUrl).then(showTemp);
 }
 
+function displayFahrenheit (event) {
+  event.preventDefault();
+  celsiusLink.classList.remove(`active`);
+  fahrenheitLink.classList.add(`active`);
+  let fahrenheitTemperature = Math.round((celsiusTemperature * 9) / 5 + 32);
+  let temperatureElement = document.querySelector(`#temperature`);
+  temperatureElement.innerHTML = fahrenheitTemperature;
+}
+ function displayCelsius (event) {
+   event.preventDefault();
+   fahrenheitLink.classList.remove(`active`);
+   celsiusLink.classList.add(`active`);
+   let temperatureElement = document.querySelector(`#temperature`);
+   temperatureElement.innerHTML = Math.round(celsiusTemperature);
+ }
+let celsiusTemperature = null;
+
 let displayWeather = document.querySelector("#current-location");
 displayWeather.addEventListener("click", yourLocation);
+
+let fahrenheitLink = document.querySelector(`#fahrenheit-link`);
+fahrenheitLink.addEventListener("click", displayFahrenheit);
+
+let celsiusLink = document.querySelector(`#celsius-link`);
+celsiusLink.addEventListener("click", displayCelsius);
